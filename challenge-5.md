@@ -31,6 +31,10 @@ docker exec node1 nodetool status
 ```
 
 You should see something that looks like this when the cluster is ready:
+
+```
+You should see something that looks like this:
+
 ```
 Datacenter: datacenter1
 =======================
@@ -42,13 +46,8 @@ UN 172.21.0.3 388.73 KB 256    ?    a0d4957b-c099-4a2b-b1ce-4b69a6f3389c rack1
 UN 172.21.0.4 382.35 KB 256    ?    33298ddc-21c6-4ddd-9b13-2068a10d0004 rack1
 ```
 
-Updating replication factor
+Updating replicaction factor
 ===
-To update the replication factor of the keyspace, you can use the following command:
-
-```run
-docker exec -it node1 cqlsh -e "ALTER KEYSPACE binance WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 3};"
-```
 
 
 In the next challenge, we will setup ScyllaDB's monitoring stack to take a look at what's happening on the cluster.
