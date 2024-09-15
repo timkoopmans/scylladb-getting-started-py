@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  scylladb:
+    image: scylladb/scylla
+    container_name: scylladb
+    expose:
+      - "19042"
+      - "7000"
+    ports:
+      - "9042:9042"
+    restart: always
+    command:
+      - --smp 1
+      - --reactor-backend=epoll
