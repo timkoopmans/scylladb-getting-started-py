@@ -40,7 +40,7 @@ async def listen_to_trades(symbol, session):
                 insert_trade(session, trade, counter)
 
                 # Print the received trade data
-                print(f"Inserted Trade - Counter: {counter}, ID: {trade['t']}, Price: {trade['p']}, Quantity: {trade['q']}, Timestamp: {trade['T']}")
+                # print(f"Inserted Trade - Counter: {counter}, ID: {trade['t']}, Price: {trade['p']}, Quantity: {trade['q']}, Timestamp: {trade['T']}")
 
             except Exception as e:
                 print(f"Error: {e}")
