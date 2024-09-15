@@ -1,4 +1,4 @@
-In the last challenge you learned how to read and write data using the python driver.  Now that you're comfortable with the basics, lets learn how to build a trade reader for the application that prints out ticker data to the screen.
+In the last challenge you learned how to read and write data using the Python driver.  Now that you're comfortable with the basics, let's learn how to build a trade reader for the application that prints out ticker data to the screen.
 
 Building a trade reader
 ===

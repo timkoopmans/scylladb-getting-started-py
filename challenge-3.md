@@ -16,7 +16,7 @@ python3
 
 Using the driver
 ===
-Using CQL code from our last challenge, we can now do something similar using python. The following code when run will
+Using CQL code from our last challenge, we can now do something similar using Python. The following code when run will:
 1. Connect to the ScyllaDB cluster.
 2. Prepare an INSERT query to add data to the trades table.
 3. Execute the query with the data tuple.
@@ -99,6 +99,6 @@ docker exec -it node1 cqlsh
 ```
 
 ```run
-SELECT * FROM binance.trades ORDER BY counter DESC LIMIT 50;
+SELECT * FROM binance.trades WHERE symbol = 'BTCUSDT' ORDER BY counter DESC LIMIT 50;
 SELECT count(*) FROM binance.trades;
 ```

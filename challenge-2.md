@@ -32,7 +32,7 @@ A ScyllaDB keyspace contains tables and defines settings for replication. To cre
 ```run
 CREATE KEYSPACE IF NOT EXISTS binance WITH replication = {
     'class': 'NetworkTopologyStrategy',
-    'replication_factor': 3
+    'replication_factor': 1
 };
 ```
 
