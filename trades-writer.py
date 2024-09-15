@@ -25,8 +25,6 @@ async def listen_to_trades(symbol, session):
     counter = 0  # Initialize counter to track trades
 
     async with websockets.connect(ws_url) as websocket:
-        print(f"Connected to {symbol} trade stream")
-
         while True:
             try:
                 # Receiving data from WebSocket
